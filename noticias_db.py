@@ -34,6 +34,13 @@ def noticia_todas():
     return todo
 
 def actualizar(**datos):
+    print(datos["titulo"])
     conn = conect()
     cursor = conn.cursor()
-    sql = """ UPDATE `database`.noticias SET titulo=%s descripcion=%s usuario_id=%s"""
+    sql = """ UPDATE `database`.noticias SET titulo=%s, descripcion=%s, usuario_id=%s 
+              where id=%s"""
+    valores = (datos["titulo"], datos["descripcion"], datos["usuario_id"], datos["id"])
+    cursor.execute(sql, (valores))
+    conn.commit()
+    conn.close()
+    return("exitoso")

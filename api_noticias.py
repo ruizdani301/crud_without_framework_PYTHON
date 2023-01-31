@@ -73,7 +73,11 @@ class noticias(BaseHTTPRequestHandler):
             self.data = self.rfile.read(int(self.headers['Content-Length']))
             # Se convierte a un diccionario python
             datos = json.loads(self.data)
-            actual = actualizar(datos)
+            actual = actualizar(**datos)
+            self.wfile.write(json.dumps({"msg": actual}).encode())
+            return BaseHTTPRequestHandler(self)
+        else:
+            return self.send_response(404)
 
                 
 httpd = HTTPServer(('localhost', 8000), noticias) 
