@@ -36,3 +36,5 @@ Tiene la clase que contendra los metodos http y manejadores de ruta para la ejec
 ### usuario_db.py y noticias_db.py
 
 Contiene los metodos que ejecutan las consultas para crear, actualizar, obtener, eliminar.
+
+Autor: Daniel ruiz, Diego jojoa
