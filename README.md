@@ -9,3 +9,30 @@ web.
 
 
 El backend de un framework se encarga de ayudar a los desarrolladores a construir una interfaz intuitiva y bien estructurada. Crea formularios y páginas, y controla la base de datos y las peticiones HTTP. Básicamente, lo que un framework backend web hace, es que el proceso de desarrollo sea más cómodo.
+
+# RETO
+
+** Crear una API que permita la creación de usurios,
+* datos
+- Nombre
+- email
+- contraseña
+ ** Crear una API que sirva de loguin (autenticación) para los usuarios del punto anterior.
+  - La respuesta debe ser si las credenciales son o no correctas.
+  - Para la creación solo necesita titulo y descripción.
+ 
+ ** Crear una API que permita adicionar comentarios a las noticias creadas.
+
+## Archivos
+
+### coneccion.py :
+
+Contiene la coneccion ala base de datos.
+
+### api.py y api_noticias.py
+
+Tiene la clase que contendra los metodos http y manejadores de ruta para la ejecución del crud
+
+### usuario_db.py y noticias_db.py
+
+Contiene los metodos que ejecutan las consultas para crear, actualizar, obtener, eliminar.
