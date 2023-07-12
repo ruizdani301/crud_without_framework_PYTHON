@@ -27,7 +27,7 @@ El backend de un framework se encarga de ayudar a los desarrolladores a construi
 
 ### coneccion.py :
 
-Contiene la coneccion ala base de datos.
+Contiene la coneccion a la base de datos.
 
 ### api.py y api_noticias.py
 
@@ -37,4 +37,4 @@ Tiene la clase que contendra los metodos http y manejadores de ruta para la ejec
 
 Contiene los metodos que ejecutan las consultas para crear, actualizar, obtener, eliminar.
 
-Autor: Daniel ruiz, Diego jojoa
+Autor: Daniel ruiz
